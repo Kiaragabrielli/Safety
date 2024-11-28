@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Safety - Bienestar Emocional</title>
+    <link rel="stylesheet" href="sobrenosotroscss.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<!-- Encabezado fijo -->
+<header class="encabezado">
+    <div class="logo">
+        <img src="img/logo.svg" alt="Safety Logo">
+        <span class="safety">Safety</span>
+    </div>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="sobrenosotros.html"  class="activo">Sobre Nosotros</a>
+        <a href="faq.html">FAQ</a>
+       <button class="boton-inicio">Iniciar Sesión</button>
+       <button class="boton-registro">Registrarse</button>
+    </nav>
+</header>
+
+<!-- Sección Beneficios -->
+<section class="beneficios">
+        <div class="imagen">
+        <img src="img/Beneficios.svg" alt="Meditación con Safety" height="500px" width="500px">
+    </div>
+    <div class="contenido">
+        <h1>Beneficios</h1>
+        <p>A Safety nos importa tu bienestar emocional, por eso creamos una aplicación que tiene como objetivo brindarte las herramientas y el apoyo necesario para mejorar tu bienestar emocional, fomentando la práctica de la meditación y proporcionando recursos adicionales para promover una mentalidad positiva y equilibrada.</p>
+    </div>
+</section>
+
+<!-- Subtítulo -->
+<section class="subtitulo">
+    <h2>Descubre la paz interior</h2>
+</section>
+
+<!-- Carrusel de reseñas -->
+<section class="reseñas">
+    <h3>Más de 10.000 calificaciones 5 estrellas</h3>
+    <p>Esto es lo que la gente piensa de nosotros</p>
+    <div class="carousel">
+        <div class="reseña1">"Safety ha cambiado mi vida. Ahora manejo mejor el estrés y la ansiedad." <br> Juan P.</div>
+        <div class="reseña2">"Una app increíble para meditar y mantener una mentalidad positiva." <br> María G.</div>
+        <div class="reseña3">"La mejor herramienta para el bienestar emocional. Altamente recomendada." <br> Lucía M.</div>
+        <div class="reseña4">"Gracias a Safety, mi calidad de vida ha mejorado mucho." <br> Alejandro S.</div>
+        <div class="reseña5">"Excelente aplicación para la práctica de la meditación y relajación diaria." <br> Sofía R.</div>
+        <div class="reseña6">"He encontrado la paz interior que buscaba. ¡Gracias Safety!" <br> Laura F.</div>
+        <div class="reseña7">"Safety me ha ayudado a gestionar mis emociones de forma efectiva." <br> Rodrigo T.</div>
+        <div class="reseña8">"Una app muy completa y fácil de usar. Les recomiendo a todos darle una oportunidad." <br> Ana V.</div>
+    </div>
+</section>
+
+<!-- Llamado a la acción -->
+<section id="call-to-action" class="cta">
+    <a href="https://play.google.com/store/games?hl=es_AR" target="_blank"> <p>Descargá nuestra app haciendo click en este link</p></a>
+</section>
+
+<!-- Footer fijo -->
+<footer class="footer">
+    <div class="contacto">
+        <h2><strong>Contacto</strong></h2>
+        <p>11 1234-4565</p>
+        <p>safetyapp@gmail.com</p>
+    </div>
+    <div class="redes-sociales">
+        <h2><strong>Contáctanos</strong></h2>
+        <a href="https://www.instagram.com" target="_blank" ><img src="img/Instagram.svg" alt="Instagram" width="40px" height="40px"></a>
+        <a href="https://www.facebook.com" target="_blank" ><img src="img/Facebook.svg" alt="Facebook" width="40px" height="40px"></a>
+        <a href="https://workspace.google.com/intl/es-419/gmail/" target="_blank" ><img src="img/Gmail.svg" alt="Email" idth="40px" height="40px"></a>
+
+    </div>
+    <div class="copyright">
+    <p>Copyright © Safety</p>
+    <p>Políticas de Privacidad</p>
+    <p>Términos y condiciones</p>
+</div>
+</footer>
+
+<script src="scripts.js">
+    $(document).ready(function() {
+    let index = 7;
+    const reseñas = $('.reseña');
+    const total = reseñas.length;
+
+    function mostrarReseña() {
+        reseñas.hide();
+        $(reseñas[index]).fadeIn();
+    }
+
+    function siguienteReseña() {
+        index = (index + 1) % total;
+        mostrarReseña();
+    }
+
+    setInterval(siguienteReseña, 3000); 
+    mostrarReseña(); 
+});
+</script>
+
+</body>
+</html>

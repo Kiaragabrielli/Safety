@@ -1,0 +1,212 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #07334C;
+    background-color: #E9FBFD;
+
+}
+
+.encabezado {
+    background-color: #8FBEDC;
+    color: #3C567B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.safety{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 40px;
+}
+.menu a{
+    text-decoration: none;
+    color: #3C567B;
+    font-weight: 700;
+}
+.menu a:hover{
+    text-decoration: underline 2px;
+}
+.menu .activo{
+text-decoration: underline 2px;
+}
+.boton-inicio{
+    background-color: #8FBEDC;
+    color: #3C567B;
+    padding: 10px 15px;
+    border: 2px solid #C6E1EC;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+    transition: backround-color 0.3s;
+
+}
+.boton-inicio:hover{
+    background-color: #C6E1EC;
+}
+.boton-registro{
+    background-color:#C6E1EC;
+    color: #3C567B;
+    padding: 10px 15px;
+    border: 2px solid #C6E1EC;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.boton-registro:hover{
+    background-color: #8FBEDC;
+}
+.principal {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 20px 20px;
+    background-color: #E9FBFD;
+    width: 80%;
+    margin: auto;
+}
+h1{
+    font-size: 80px;
+}
+.contenido-principal p{
+    font-size: 20px;
+}
+.boton{
+    background-color:#8FBEDC;
+    color: #07334C;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.boton:hover{
+    background-color:#07334C ;
+    color: #C6E1EC;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.galeria {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #EBD6CB;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #07334C;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.video-item {
+    background: #E9FBFD;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#propiedades{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E9FBFD;
+    padding: 40px 80px ;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.funciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.cta{
+    background-color:#EBD6CB;
+    color: #07334C;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom:250px ;
+    margin-top: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.cta:hover{
+    background-color: #8FBEDC;
+    color: #07334C;
+    transform: scale(1.05);
+}
+.cta a{
+    text-decoration: none;
+    color:#07334C;
+}
+
+.footer {
+    background-color: #8FBEDC;
+    color:#3C567B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: smaller;
+}
+h2{
+    font-size: larger;
+}
+.redes-sociales{
+    text-align: center;
+}
+
